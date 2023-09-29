@@ -18,7 +18,7 @@
 	<div class="container">
 		<div class="panel panel-primary">
 			<div class="panel-heading">
-				<h2 class="text-center">Thêm Sản Phẩm</h2>
+		
 			</div>
             <button type="submit" class="btn btn-info"><a href="{{route('showProduct')}}" style="text-decoration: none; color:yellow">Danh Sách Sản Phẩm</a></button>
 			<br>
