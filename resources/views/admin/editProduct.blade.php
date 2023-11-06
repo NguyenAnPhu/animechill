@@ -37,10 +37,14 @@
                         <label for="img">Img:</label>
                         <input type="text" class="form-control" id="img" name="img"value="{{$idProduct->img}}">
                     </div>
-                    
+                    <div class="form-group">
+                        <label for="video">Video:</label>
+                        <input type="text" class="form-control" id="video" name="video"value="{{$idProduct->video}}">
+                    </div>
                     <div class="form-group">
                         <label for="genre">Genre:</label>
                         <input type="text" class="form-control" id="genre" name="genre"value="{{$idProduct->genre}}">
+                        
                     </div>
                     <div class="form-group">
                         <label for="release">Release:</label>
@@ -48,7 +52,10 @@
                     </div>
                     <div class="form-group">
                         <label for="status">Status:</label>
-                        <input type="text" class="form-control" id="status" name="status"value="{{$idProduct->status}}">
+                        <select name="status" id="status">
+                            <option value="HOT">HOT</option>
+                            <option value="SẮP RA">SẮP RA</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="rate">Rate:</label>

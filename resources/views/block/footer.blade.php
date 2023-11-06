@@ -4,9 +4,13 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-wrap text-left lg:text-left">
         <div class="w-full lg:w-6/12 px-4">
-          <h4 class="text-3xl fonat-semibold text-white">Let's keep in touch!</h4>
+          <h4 class="text-5xl text-fuchsia-500" style="font-family:'Brush Script MT'">AnimeChill</h4>
+          <br>
           <h5 class="text-lg mt-0 mb-2 text-white">
-            Find us on any of these platforms, we respond 1-2 business days.
+            Liên hệ bản quyền: info@animechill.pro
+          </h5>
+          <h5 class="text-lg mt-0 mb-2 text-white">
+            Liên hệ quảng cáo: ads@animechill.pro
           </h5>
           <div class="mt-6 lg:mb-0 mb-6">
             <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">

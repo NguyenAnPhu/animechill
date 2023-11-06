@@ -15,6 +15,7 @@
         @endif
     </script>
     <title>AnimeChill</title>
+    
 </head>
     
 <body>
@@ -29,33 +30,20 @@
             <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Name</th>
-                {{-- <th scope="col">Des</th> --}}
-                <th scope="col">Img</th>
-                <th scope="col">Video</th>
-                <th scope="col">Genre</th>
-                <th scope="col">Release</th>
-                <th scope="col">Status</th>
-                <th scope="col">Rate</th>
-                <th scope="col">List_Ep</th>
-                <th scope="col">Action</th>
+                <th scope="col">IdProduct</th>
+                <th scope="col">Text</th>
+                
             </tr>
 
-            @foreach ($productList as $item)
+            @foreach ($commentList as $item)
                 <tr>
+                    
                     <td >{{$item->id}}</td>
                     <td >{{$item->name}}</td>
-                    {{-- <td >{{$item->des}}</td> --}}
-                    <td >
-                        <img src="{{$item->img}}" alt="" srcset="">
-                    </td>
-                    <td >{{$item->video}}</td>
-                    <td >{{$item->genre}}</td>
-                    <td >{{$item->release}}</td>
-                    <td >{{$item->status}}</td>
-                    <td >{{$item->rate}}</td>
-                    <td >{{$item->list_ep}}</td>
+                    <td >{{$item->idProduct}}</td>
+                    <td >{{$item->text}}</td>
                     <td>
-                        <form action="{{ url('admin/delete-Product/'.$item->id)}}" method="POST">
+                        <form action="" method="POST">
                             @method('DELETE')
                             @csrf
                             
@@ -64,7 +52,7 @@
                             </button>
                         </form>
                         <br>
-                        <a href="{{url('admin/edit-Product/'.$item->id)}}" style="text-decoration: none">
+                        <a href="" style="text-decoration: none">
                         <button type="submit" class="inline-block rounded bg-warning px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#e4a11b] transition duration-150 ease-in-out hover:bg-warning-600 hover:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.3),0_4px_18px_0_rgba(228,161,27,0.2)] focus:bg-warning-600 focus:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.3),0_4px_18px_0_rgba(228,161,27,0.2)] focus:outline-none focus:ring-0 active:bg-warning-700 active:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.3),0_4px_18px_0_rgba(228,161,27,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(228,161,27,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.2),0_4px_18px_0_rgba(228,161,27,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.2),0_4px_18px_0_rgba(228,161,27,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(228,161,27,0.2),0_4px_18px_0_rgba(228,161,27,0.1)]" style="margin-left: 5px">
                             
                              Edit
@@ -77,19 +65,13 @@
             @endforeach   
             <br>
             <div class="flex justify-center m-4">
-                
-                <a href="{{route('viewInputProduct')}}" class="m-2" style="text-decoration: none; color: #fff">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style="margin-left:auto;margin-right:auto;display:block">Thêm Sản Phẩm</button>
-                </a>
-                <a href="{{route('showHomeProductHot')}}" class="m-2" style="text-decoration: none; color: #fff">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style="margin-left:auto;margin-right:auto;display:block">Trang Chủ</button>
+                <a href="{{route('showProduct')}}" class="m-2" style="text-decoration: none; color: #fff">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style="margin-left:auto;margin-right:auto;display:block">Danh Sách Sản Phẩm</button>
                 </a>
                 <a href="{{route('showUser')}}" class="m-2" style="text-decoration: none; color: #fff">
                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style="margin-left:auto;margin-right:auto;display:block">Danh Sách Người Dùng</button>
                 </a>
-                <a href="{{route('showComment')}}" class="m-2" style="text-decoration: none; color: #fff">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" style="margin-left:auto;margin-right:auto;display:block">Danh Sách Bình Luận</button>
-                </a>
+                
             </div>
             
     </div>
