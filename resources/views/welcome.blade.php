@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <button>
-                        abc
+                        abc xoa cai app canvas nho? devay.aaaa
                     </button>
 
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
