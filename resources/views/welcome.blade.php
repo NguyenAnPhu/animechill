@@ -130,10 +130,11 @@
                         </div>
                     </div>
                     <button>
-                        abc xoa cai app canvas nho? devay.aaaa
+                     <p>thay doi</p>
                     </button>
                     <button>
-                        nhanh main thay doi
+                       <p> nhanh main thay doi</p>
+                       abc 
                     </button>
 
                     <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
