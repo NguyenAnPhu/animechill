@@ -40,7 +40,10 @@
                         <label for="img">Img:</label>
                         <input type="text" class="form-control" id="img" name="img">
                     </div>
-                    
+                    <div class="form-group">
+                        <label for="video">Video:</label>
+                        <input type="text" class="form-control" id="video" name="video">
+                    </div>
                     <div class="form-group">
                         <label for="genre">Genre:</label>
                         <input type="text" class="form-control" id="genre" name="genre">

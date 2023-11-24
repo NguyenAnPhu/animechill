@@ -50,6 +50,7 @@ class RouteProductController extends Controller
         $name= $request->name;
         $des= $request->des;
         $img= $request->img;
+        $video= $request->video;
         $genre= $request->genre;
         $release= $request->release;
         $status= $request->status;
@@ -59,6 +60,7 @@ class RouteProductController extends Controller
             'name'=>$name,
             'des'=>$des,
             'img'=>$img,
+            'video'=>$video,
             'genre'=>$genre,
             'release'=>$release,
             'status'=>$status,
