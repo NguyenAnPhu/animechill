@@ -3,7 +3,7 @@
         <i class="fa-solid fa-ranking-star"></i>
         Top Anime
     </span>
-    <img src="https://statics.animeow.pro/imgur/1TVJzh4.webp" alt="" class="w-full">
+    <img src="https://wallpapers.com/images/featured/anime-dbt18qjb7b1cstr1.jpg" alt="" class="w-full">
     <div class="flex flex-col pb-6 ">
         @foreach ($productTop as $item)
         
